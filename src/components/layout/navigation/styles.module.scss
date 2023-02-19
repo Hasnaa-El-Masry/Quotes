@@ -1,0 +1,114 @@
+@import '../../../styles/variables';
+
+.nav {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $first-color;
+    color: $first-color-lighten;
+}
+
+.logo {
+    font-size: 1.3rem;
+    color: $second-color;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav li {
+    margin-left: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.toggle {
+    cursor: pointer;
+    font-size: 1.4rem;
+    display: block;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 2rem;
+
+    background-color: $container-color;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: .1);
+    width: 90%;
+
+    transition: all .4s ease-in;
+    transform: translateY(-100%);
+}
+
+.nav a {
+    color: $first-color-alt !important;
+    font-weight: $font-semi-bold;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: $first-color !important;
+}
+
+.show {
+    transform: translateY(70%) !important;
+}
+
+
+@include tablet {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .nav ul {
+
+        flex-direction: row;
+        position: initial;
+        padding: 0;
+
+        margin: 0;
+        background-color: $first-color;
+        border-radius: none;
+        box-shadow: none;
+        width: initial;
+        transition: none;
+        transform: initial;
+    }
+
+    .nav a {
+        color: $first-color-lighten !important;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+        color: $text-white !important;
+    }
+
+    a.active {
+        color: $text-white !important;
+    }
+
+    .show {
+        transform: translateY(0) !important;
+    }
+
+}
+

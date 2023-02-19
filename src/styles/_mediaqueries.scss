@@ -1,0 +1,48 @@
+/* ======= MEDIA QURIES ======== */
+
+/* for small devices */
+@mixin smallerDevice {
+
+    @media screen and (max-width:575px) {
+        @content
+    }
+}
+
+;
+
+
+/* for medium devices */
+@mixin smallDevice {
+
+    @media screen and (min-width:576px) {
+        @content
+    }
+
+}
+
+;
+
+@mixin mobile {
+    @media screen and (min-width:768px) {
+        @content
+    }
+
+}
+
+;
+
+/* for large devices */
+@mixin tablet {
+    @media screen and (min-width:967px) {
+        @content
+    }
+}
+
+;
+
+@mixin largeDevice {
+    @media screen and (min-width:1024px) {
+        @content
+    }
+
+}

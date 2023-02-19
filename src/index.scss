@@ -1,0 +1,91 @@
+@import './styles/variables';
+@import './styles/index.scss';
+
+.centered {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.focused {
+  font-size: 3rem;
+  font-weight: bold;
+  color: $text-white;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: $first-color;
+  color: $text-white;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid $first-color;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: $first-color-alt;
+  border-color: $first-color-alt;
+  color: $text-white;
+}
+
+.btn--flat {
+  cursor: pointer;
+  font: inherit;
+  color: $first-color;
+  border: none;
+  background-color: none;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+.btn--flat:hover,
+.btn--flat:active {
+  background-color: $first-color;
+  color: $text-white;
+}
+
+.btn--header {
+  cursor: pointer;
+  font: inherit;
+  color: $first-color;
+  border: none;
+  background-color: $second-color;
+  text-decoration: none;
+  padding: 0.3rem 1.5rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert-error {
+  border: 1px solid $text-error;
+  background-color: $text-error;
+  padding: 1rem;
+  margin-top: .9rem;
+
+  p {
+    color: $text-white;
+  }
+}
+
+.danger {
+  background-color: $text-error;
+  border-color: $text-error;
+
+  &:hover {
+    background-color: rgba($text-error, .8);
+    border-color: $text-error;
+    color: $text-white;
+
+
+  }
+}
+
+.m-2 {
+  margin: 2rem;
+}

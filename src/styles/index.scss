@@ -1,0 +1,181 @@
+@import './_main';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+    outline: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: $body-color;
+    font-family: $body-font;
+    color: $text-color;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: $font-semi-bold;
+}
+
+h1 {
+    font-size: $biggest-font-size;
+    color: $second-color;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    color: $first-color;
+}
+
+h3 {
+    font-size: $h3-font-size;
+    color: $first-color;
+}
+
+h5 {
+    color: $text-color-light;
+}
+
+small {
+    font-size: .6rem;
+    color: $text-color-light;
+}
+
+p {
+    color: $text-color;
+    $normal-font-size: .938rem;
+}
+
+a {
+    color: $text-color-light;
+    $normal-font-size: .938rem;
+    display: inline-block;
+
+    &:hover {
+        color: $first-color;
+    }
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@include tablet {
+    $biggest-font-size: 3rem;
+    $h2-font-size: 1.75rem;
+    $h3-font-size: 1.25rem;
+
+    $normal-font-size: 1rem;
+    $small-font-size: .875rem;
+    $smaller-font-size: .813rem;
+
+    h1 {
+        font-size: $biggest-font-size;
+    }
+
+    h2 {
+        font-size: $h2-font-size;
+    }
+
+    h3 {
+        font-size: $h3-font-size;
+    }
+
+    p,
+    a {
+        font-size: $normal-font-size;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+// Swiper style modefiying
+
+.swiper-pagination-bullet-active {
+    background-color: $first-color;
+}
+
+// Form style:
+form {
+    position: relative;
+
+    .loading {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .control {
+        margin-bottom: 0.5rem;
+    }
+
+    .control label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+        color: $first-color;
+    }
+
+    .control input,
+    .control textarea {
+        font: inherit;
+        padding: 0.35rem;
+        border-radius: 4px;
+        background-color: $container-color;
+        border: 1px solid $container-color;
+        display: block;
+        width: 100%;
+        font-size: 1.25rem;
+        color: $second-color;
+    }
+
+    .control input:focus,
+    .control textarea:focus {
+        background-color: $first-color-lighten;
+        outline-color: $first-color;
+    }
+
+    .actions {
+        text-align: right;
+        margin-top: 1rem;
+    }
+
+    .actions button {
+        font-size: 1.25rem;
+    }
+
+    .links {
+        margin-top: .5rem;
+        font-size: $small-font-size;
+    
+    }
+}

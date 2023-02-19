@@ -1,0 +1,76 @@
+// GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+@import 'mediaqueries';
+// CSS VARIABLES
+
+$nav-height: 4rem;
+
+/* ===== Colors   ===== */
+
+$hue: 90;
+$sat: 90;
+
+$first-color: hsl(265, 44%, 39%);
+
+$first-color-light: hsl(265, 44%, 70%);
+$first-color-lighten: hsl(265, 44%, 90%);
+$first-color-alt: hsl(265, 44%, 53%);
+
+$second-color: hsl(33, 95%, 53%);
+
+$second-color-light: hsl(33, 95%, 70%);
+$second-color-lighten: hsl(33, 95%, 90%);
+$second-color-alt: hsl(33, 95%, 60%);
+
+$text-white: #fff;
+$text-color: hsl(0, 0%, 27%);
+$text-error: rgb(211, 63, 63);
+$text-small: #888;
+$text-color-light: hsl(0, 0%, 50%);;
+
+$body-color: #F5F5F5;
+$container-color: #E8E2E2;
+
+$scroll-bar-color: hsl($hue, 4%, 85%);
+$scroll-thumb-color: hsl($hue, 4%, 75%);
+
+/* ===== Font and Typography  ===== */
+
+$body-font: 'Raleway', sans-serif;
+$biggest-font-size: 2rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+$smaller-font-size: .75rem;
+
+/* ===== Container width  ===== */
+
+$container-width-lg: 75%;
+$container-width-md: 86%;
+$container-width-sm: 90%;
+
+/* ===== Section  ===== */
+$section-padding: 4.5rem 0 1rem;
+
+/* =====  Font Weight  ===== */
+
+$font-semi-bold: 600;
+$font-bold: 700;
+
+/* =====  Margins  ===== */
+
+$mb-0-5: .5rem;
+$mb-0-75: .75rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+
+/* =====  Z index  ===== */
+
+$z-tooltip: 10;
+$z-fixed: 100;
+
+/* ===== Transition  ===== */
+$transition: all .4s ease-in-out

@@ -1,0 +1,58 @@
+/* ======= Layout ======== */
+
+@import './variables';
+@import './mediaqueries';
+
+section {
+    // padding: $section-padding;
+    
+    h2 {
+        margin-bottom: 3rem;
+    }
+}
+
+.svg {
+    &__color {
+        fill: var(--first-color);
+    }
+
+    &__blob {
+        fill: var(--first-color-light);
+    }
+
+    &__img {
+        width: 300px;
+        justify-self: center;
+    }
+}
+
+/* ======= Layout ======== */
+
+.container {
+    max-width: $container-width-lg ;
+    margin: auto;
+}
+
+@include smallerDevice {
+    .container {
+        max-width: $container-width-sm ;
+    }
+    
+}
+
+@include tablet {
+    .container {
+        max-width: $container-width-md ;
+    }
+}
+
+@include largeDevice {
+    .container {
+        max-width: $container-width-lg ;
+    }
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
