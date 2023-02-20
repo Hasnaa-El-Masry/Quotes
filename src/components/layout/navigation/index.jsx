@@ -25,7 +25,7 @@ const Navigation = () => {
 
             <div className={styles.logo}>
                 Great Quotes
-            </div>
+            </div> 
 
             <div className={styles.toggle} onClick={toggle}>
                 <GiHamburgerMenu />
@@ -33,12 +33,12 @@ const Navigation = () => {
 
             <ul className={show ? styles.show : ''}>
                 <li>
-                    <NavLink onClick={toggle} className={({ isActive }) => isActive ? styles.active : ''} to='/' end >Quotes</NavLink>
+                    <NavLink onClick={toggle} className={({ isActive }) => isActive ? styles.active : ''} to='' end >Quotes</NavLink>
                 </li>
                 {token &&
                     <>
                         <li>
-                            <NavLink onClick={toggle} className={({ isActive }) => isActive ? styles.active : ''} to='/new-qoute'>New Quote</NavLink>
+                            <NavLink onClick={toggle} className={({ isActive }) => isActive ? styles.active : ''} to='new-qoute'>New Quote</NavLink>
                         </li>
                         <li>
                             <button className='btn--header' onClick={logout}>
@@ -51,7 +51,7 @@ const Navigation = () => {
 
                 {!token && <li>
                     <button className='btn--header'>
-                        <NavLink onClick={toggle} className={({ isActive }) => isActive ? styles.active : ''} to='/login'>login</NavLink>
+                        <NavLink onClick={toggle} className={({ isActive }) => isActive ? styles.active : ''} to='login'>login</NavLink>
                     </button>
                 </li>}
             </ul>

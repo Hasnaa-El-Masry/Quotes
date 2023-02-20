@@ -59,7 +59,7 @@ const Signup = ({ onSignup, loading, error }) => {
                 </div>
 
                 <div className='links'>
-                    <Link to='/login'> Already Have an account!</Link>
+                    <Link to='../login'> Already Have an account!</Link>
                 </div>
             </form>
         </Card>

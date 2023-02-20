@@ -14,7 +14,7 @@ import GuestGaurd from '../gaurds/guestGaurd';
 
 export const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/Quotes',
         element: <Root />,
         errorElement: <ErrorPage />,
         children: [
@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
                 element: <Qoutes />,
             },
             {
-                path: 'qoutes/:id/*',
+                path: ':id/*',
                 element: <QouteDetails />,
                 children: [
                     {

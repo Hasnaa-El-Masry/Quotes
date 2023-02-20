@@ -41,7 +41,7 @@ const Login = ({ onLogin, loading, error }) => {
                 </div>
 
                 <div className='links'>
-                    <Link to='/signup'>Don't have an account!</Link>
+                    <Link to='../signup'>Don't have an account!</Link>
                 </div>
             </form>
         </Card>
