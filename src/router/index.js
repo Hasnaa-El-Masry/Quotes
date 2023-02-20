@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 
 import QouteDetails from "../pages/quote-details";
 import Qoutes from "../pages/quotes";
@@ -12,13 +12,12 @@ import Signup from '../pages/signup';
 import AuthGaurd from '../gaurds/authGaurd';
 import GuestGaurd from '../gaurds/guestGaurd';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
-        path: '/Quotes',
+        path: '',
         element: <Root />,
         errorElement: <ErrorPage />,
         children: [
-            
             {
                 index: true,
                 element: <Qoutes />,
